@@ -25,3 +25,17 @@
     btnText.innerHTML = "Read Less";
   }
 }
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("searchForm");
+      const input = document.getElementById("searchInput");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const userQuery = input.value.trim();
+        if (userQuery !== "") {
+          const fullQuery = `${userQuery} Varanasi tourism`;
+          const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(fullQuery)}`;
+          window.open(searchUrl, "_blank");
+        }
+      });
+    });
