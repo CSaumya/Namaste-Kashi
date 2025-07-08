@@ -1,0 +1,358 @@
+@media (max-width: 1024px) {
+  .nav-icons ul {
+    gap: 20px;
+  }
+
+  .search-container input {
+    width: 150px;
+  }
+
+    #msg1 {
+    font-size: 3.2rem;
+  }
+
+  #msg2 {
+    font-size: 1.8rem;
+  }
+    .explore-head p {
+    font-size: 1.8rem;
+  }
+
+  .mybox {
+    font-size: 1.05rem;
+  }
+
+  #btn {
+    font-size: 0.95rem;
+  }
+    .jar {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #nav-toggle {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1001;
+    margin-left: 20px;
+  }
+    .nav-icons {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+ .nav-icons.show {
+    display: flex;
+  }
+  .nav-icons ul {
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-icons ul li {
+    margin: 10px 0;
+  }
+  .search {
+    display: none;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .nav-logo img {
+    height: 40px;
+  }
+  
+   .hero-section {
+    height: 60vh;
+  }
+
+  .hero-msg {
+    font-size: 2.5rem;
+  }
+
+  #msg1 {
+    font-size: 2.6rem;
+  }
+
+  #msg2 {
+    font-size: 1.5rem;
+  }
+    .hero-text {
+    font-size: 0.95rem;
+  }
+
+  .explore-head p {
+    font-size: 1.6rem;
+  }
+
+  .mybox {
+    font-size: 1rem;
+  }
+
+  #btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+    .jar {
+    flex: 1 1 calc(48% - 20px);
+    max-width: calc(48% - 20px);
+  }
+
+  .jar img {
+    height: 180px;
+  }
+    .foot-panel1 a img {
+    height: 45px;
+    max-width: 100px;
+  }
+    .footer2 {
+    flex: 1 1 45%;
+  }
+
+  .state-tourism {
+    flex-direction: column;
+  }
+
+  .state-tour-div1,
+  .state-tour-div2,
+  .state-tour-div3 {
+    flex: 1 1 100%;
+  }
+  
+}
+
+@media screen and (max-width: 425px) {
+  .search-container {
+    width: 100%;
+    padding: 5px 8px;
+  }
+
+  .search-container input {
+    font-size: 14px;
+  }
+
+  .nav-icons ul {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .nav-icons li {
+    gap: 6px;
+  }
+
+  .nav-logo img {
+    height: 35px;
+  }
+  
+    .hero-section {
+    height: 50vh;
+  }
+
+  .hero-msg {
+    font-size: 2rem;
+  }
+    .hero-text {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .explore-head p {
+    font-size: 1.4rem;
+  }
+
+  .mybox {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  #btn {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+    .jar {
+    flex: 1 1 calc(48% - 20px);
+    max-width: calc(48% - 20px);
+  }
+
+  .jar img {
+    height: 160px;
+  }
+
+  .jar h2 {
+    font-size: 1rem;
+  }
+
+  .jar p {
+    font-size: 0.9rem;
+  }
+    .location-h p {
+    font-size: 1.4rem;
+  }
+  .location-h2 p {
+    font-size: 0.95rem;
+  }
+   .foot-panel1 {
+    gap: 15px;
+  }
+
+  .foot-panel1 a img {
+    height: 40px;
+    max-width: 90px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .search-container input {
+    font-size: 13px;
+  }
+
+  .nav-icons ul {
+    font-size: 13px;
+  }
+
+  .nav-menu {
+    font-size: 20px;
+  }
+  
+  .hero-section {
+    height: 45vh;
+  }
+
+  .hero-msg {
+    font-size: 1.8rem;
+  }
+    .explore-head p {
+    font-size: 1.2rem;
+  }
+
+  .mybox {
+    font-size: 0.9rem;
+  }
+
+  #btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+    .jar {
+    flex: 1 1 calc(48% - 20px);
+    max-width: calc(48% - 20px);
+  }
+
+  .jar img {
+    height: 150px;
+  }
+
+  .jar h2 {
+    font-size: 1rem;
+  }
+
+  .jar p {
+    font-size: 0.9rem;
+  }
+    .foot-panel1 {
+    gap: 12px;
+  }
+
+  .foot-panel1 a img {
+    height: 38px;
+    max-width: 85px;
+  }
+}
+
+@media (max-width: 320px) {
+    .navbar {
+    padding: 8px 10px;
+  }
+
+  .search-container {
+    gap: 3px;
+    padding: 4px 6px;
+  }
+
+  .search-container input {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+   .nav-icons ul {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .nav-logo img {
+    height: 30px;
+  }
+
+  .nav-menu {
+    font-size: 18px;
+  }
+
+    .hero-section {
+    height: 40vh;
+  }
+
+  .hero-msg {
+    font-size: 1.5rem;
+  }
+
+    .hero-text {
+    font-size: 0.85rem;
+  }
+
+  .explore-head p {
+    font-size: 1.1rem;
+  }
+
+  .mybox {
+    font-size: 0.85rem;
+  }
+
+  #btn {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+    .att-head1 p {
+    font-size: 1.5rem;
+  }
+
+  .att-head2 p {
+    font-size: 0.9rem;
+  }
+
+  .jar img {
+    height: 150px;
+  }
+    .location {
+    padding: 30px 10px;
+  }
+    .foot-panel1 {
+    gap: 10px;
+  }
+
+  .foot-panel1 a img {
+    height: 35px;
+    max-width: 80px;
+  }
+}
+

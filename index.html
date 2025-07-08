@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Namaste Kashi</title>
+</head>
+<body>
+<!--Navbar-->
+  <header>
+      <div class="navbar">
+        <i class="fa-solid fa-bars nav-menu" id="nav-toggle"></i>
+          <div class="nav-logo">
+            <img src="./assets/logo.jpg" alt="logo">
+          </div>
+          <div class="nav-icons" id="nav-lists">
+            <ul>
+              <li>
+               <i class="fa-solid fa-earth-americas"></i>
+                <a href="#book1">Attractions</a>
+               </li>
+               <li>
+                 <i class="fa-solid fa-pen-to-square"></i>
+                  <a href="#book2">Experiences</a>
+                </li>
+                <li>
+                   <i class="fa-solid fa-plane-departure"></i>
+                    <a href="#book3">Excursions</a>
+                  </li>
+            </ul>
+          </div>
+          <div class="search">
+                        <div class="search-container">
+                         <input type="text" id="searchInput" placeholder="Search here..." />
+                          <button onclick="performSearch()">
+                             <i class="fa-solid fa-magnifying-glass m-glass"></i>
+                           </button>
+                        </div>
+          </div>
+      </div>
+  </header>
+  <main>
+<!--Hero section-->   
+    <div class="hero-section">
+          <img src="./assets/hero .jpeg" alt="hero-img" class="hero-img">
+          <div class="hero-msg">
+            <p id="msg1">Varanasi</p>
+            <br>
+            <p id="msg2">City Of Lights</p>
+          </div>
+    </div>
+<!--Explore section-->
+    <div class="hero-text">
+          <p>Home    /    Destinations    /    Varanasi</p>
+        </div>
+        <div class="explore-section">
+          <div class="explore-head">
+          <p>Explore Varanasi city and its best places to visit</p></div>
+          <div class="mybox">
+          <p class="box1">
+            One of the oldest living inhabitations of the world, the sacred city of Varanasi or Benaras, nestled on the banks of the holy Ganges river, has been attracting pilgrims for centuries. Celebrated author Mark Twain, who visited India in the last decade of the 19th century, described the city as “older than history, older than tradition, older even than legend.”
+            <span class="mybox1" id="myboxId"></span><span id="myboxId2"> Believed to be the abode of Lord Shiva, Varanasi is among the seven sacred cities in the country. Centuries of history, art and tradition have conflated to add colourful layers to Varanasi's aura, which is most spectacularly evident at its ghats (stepped banks of a river). An abode of travellers in search of holiness and divine providence, the ghats of the Ganges are the highlight of the spiritual scene of Varanasi. From the famous Ganga arti (a fire ritual) to cremation ceremonies, the ghats are the site of time-honoured rituals that are performed to this day
+            Varanasi is also one of the holiest sites of Buddhism, as it was in Sarnath, which is located merely 12 km away, that Lord Buddha preached his first sermon. Jain literature, too, refers to Kashi as a holy city, as it is the birthplace of four Jain tirthankaras (saints). It is said that Kabir, a 15th-century mystic poet and saint, was also born in this city.
+            </span>
+          </p>
+            <button id="btn" onclick="MoreLess()">Read More</button>
+          </div>
+         </div>
+<!--Attraction section-->
+        <div class="attractions" id="book1">
+          <div class="att-head">
+            <div class="att-head1">
+              <p>Attractions</p>
+            </div>
+            <div class="att-head2">
+              <p>The legacy of Varanasi through its historic attractions</p>
+            </div>
+          </div>
+        <div class="att-content">
+        <div class="jar1 jar">
+        <div class="jar1-img">
+        <a href="https://en.wikipedia.org/wiki/Assi_Ghat">
+        <img src="./assets/Assi-Ghat.webp" alt="wikipedia.com" >
+        </a> 
+        </div>
+        <div class="jar1-text">
+        <h2>Assi Ghat</h2>
+        <p>One of the biggest ghats that is also furthest south to the main ghats.</p>
+        </div>
+        </div>
+      <div class="jar2 jar">
+        <div class="jar2-img">
+          <a href="https://en.wikipedia.org/wiki/Banaras_Hindu_University">
+            <img src="./assets/bhu.jpeg" alt="wikipedia" >
+          </a>
+        </div>
+        <div class="jar2-text">
+          <h2>Banaras Hindu University</h2>
+          <p>The Banaras Hindu University (BHU) is one of the oldest varsities in India.</p>
+        </div>
+      </div>
+      <div class="jar3 jar">
+        <div class="jar3-img">
+          <a href="https://en.wikipedia.org/wiki/Sarnath">
+            <img src="./assets/sarnath2.jpg" alt="wikipedia" >
+          </a>
+        </div>
+                <div class="jar3-text">
+          <h2>Sarnath</h2>
+          <p>One of the most revered Buddhist pilgrimage centres in the world.</p>
+        </div>
+      </div>
+      <div class="jar4 jar">
+        <div class="jar4-img">
+          <a href="https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple">
+            <img src="./assets/vt-old.jpg" alt="wikipedia" >
+          </a>
+        </div>
+        <div class="jar4-text">
+          <h2>Vishwanath Temple(Old)</h2>
+          <p>It is one of the 12 Jyotirlinga, one of the best places in Varanasi.</p>
+        </div>
+      </div>
+      </div>
+      </div>
+<!--Itinerary section-->
+              <div class="itinerary">
+             <div class="att-head">
+            <div class="att-head1">
+              <p>Itinerary</p>
+            </div>
+            <div class="att-head2">
+              <p>Plan Your Day</p>
+            </div>
+          </div>
+            <div class="it-box">
+            <div class="day-box">
+            <h3>Day 1: Spiritual & Historical Tour</h3>
+              <ul>
+                <li>☀️ Morning: Sunrise boat ride at Dashashwamedh Ghat</li>
+                 <li>🛕 Visit Kashi Vishwanath Temple</li>
+                 <li>🍛 Lunch at a local restaurant</li>
+                 <li>🏛️ Explore Sarnath (museum, stupas)</li>
+                <li>🌅 Evening: Ganga Aarti at Assi Ghat</li>
+                  <br>
+                         <h3>Day 2: Culture & Food Trail</h3>
+      <li>☀️ Morning walk in old city alleys</li>
+      <li>🛍️ Visit local markets for Banarasi sarees</li>
+      <li>🍲 Try famous street foods (Kachori, Lassi)</li>
+      <li>🎨 Visit Bharat Kala Bhavan Museum</li>
+      <li>🎶 Attend a classical music performance (optional)</li>
+    </ul>
+    <br>   
+    <h2>Budget:</h2> <p>A 2-day Varanasi trip can cost between ₹2,500 to ₹10,000 per person, depending on your choice of accommodation, food, transportation, and activities</p>
+       <br>
+                         <h3>For Booking And Local Guides</h3>
+                  <ul>
+                      <li><a href="https://www.justdial.com/Varanasi/Tourist-Guide-Services-in-Kashi/nct-10489777">Justdial</a></li>
+                      <li><a href="https://www.tripadvisor.in/AttractionProductReview-g297685-d14789964-Book_Admission_Tickets_Cab_Tour_Guide_For_Varanasi_Tour-Varanasi_Varanasi_District.html">TripAdvisor</a></li>
+                      <li><a href="https://kashiyatra.in/">KashiYatra</a></li>
+                      <li><a href="https://www.showaround.com/locals/india/varanasi">Show Around</a></li>
+                      <li></li>
+                  </ul>    
+            </div>                     
+            </div>
+        </div>
+<!--Experience section-->
+        <div class="experiences" id="book2">
+          <div class="exp-head">
+          <p>Immersive Experience</p>
+          </div>
+          <div class="exp-head2">
+          <p>Take away the best handpicked experiences from the land of Shiva</p>
+          </div>
+        </div>
+        <div class="exp-content">
+          <div class="exp1 exp">
+            <div class="exp1-img">
+              <a href="https://www.fabhotels.com/blog/15-delectable-foods-in-banaras/">
+                <img src="./assets/food-cui.jpeg" alt="fabhotels" height="150px" width="250px">
+              </a>
+            </div>
+            <div class="exp1-text">
+              <a href="#">Food And Cuisine</a>
+            </div>
+               </div>
+          <div class="exp2 exp">
+            <div class="exp2-img">
+              <a href="https://en.wikipedia.org/wiki/Ghats_in_Varanasi#:~:text=Ghat%20%2F%20Buddha%20Ghat-,Popular%20ghats,Ghat%2C%20and%20Adi%20Keshav%20Ghat.">
+                <img src="./assets/ghats.jpeg" alt="wikipedia" height="150px" width="250px">
+              </a>
+            </div>
+            <div class="exp2-text">
+              <a href="#">Ghats Of Varanasi</a>
+            </div>
+          </div>
+          <div class="exp3 exp">
+            <div class="exp3-img">
+              <a href="https://kashi.gov.in/theme/spirituality">
+                <img src="./assets/spritual.jpg" alt="kashiGov" height="150px" width="250px">
+              </a>
+            </div>
+            <div class="exp3-text">
+              <a href="#">Spiritual</a>
+            </div>
+          </div>
+          </div>
+<!--Map/location section-->
+        <div class="location" id="book3">
+            <div class="location-head">
+              <div class="location-h">
+              <p>Excursions</p>
+              </div>
+              <div class="location-h2">
+              <p>Explore the places near the oldest living city of the world</p>
+              </div>
+            </div>
+            <div class="location-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.09799703836!2d82.90870608969587!3d25.32089492128138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1712368675416!5m2!1sen!2sin"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>    
+<!--Mode/Travel section-->
+            <div class="mode">
+            <div class="mode-head">
+              <p>How To Get There</p>
+            </div>
+            <div class="mode-ways">
+            <div class="mode1 ways">
+              <i class="fa-solid fa-plane" id="mode1-icon"></i>
+              <div class="mode1-head">
+                <p>By Air</p>
+              </div>
+              <div class="mode1-text">
+                <p> The Lal Bahdur Shastri Airport is located 25 km northwest of the city and operates 
+                    regular flights to Delhi,Mumbai, Kolkata, Bengaluru, Hyderabad and Vishakhapatnam. 
+                    Buses, taxis and tuk-tuks/auto rickshaws regularly ply between the airport and the city.</p>
+              </div>
+            </div>
+                        <div class="mode2 ways">
+              <i class="fa-solid fa-van-shuttle" id="mode2-icon"></i>
+              <div class="mode2-head">
+                <p>By Road</p>
+              </div>
+              <div class="mode2-text">
+                <p> Varanasi is connected by motorable roads to nearby cities. The bus station in Varanasi is 
+                    located just east of the Varanasi Junction railway station. There are buses running 
+                    regularly from Lucknow, Gorakhpur, Khajurao, Kanpur, Faizabad, Bodhgaya and Allahabad.</p>
+              </div>
+            </div>
+            <div class="mode3 ways">
+              <i class="fa-solid fa-train" id="mode3-icon"></i>
+              <div class="mode3-head">
+                <p>By Train</p>
+              </div>
+                            <div class="mode3-text">
+                <p> Varanasi is served by three major railway stations – the Varanasi Junction, the Manduadih
+                   railway station and the nearby Mughal Sarai Railway station. There are multiple daily 
+                   trains to and from Delhi, Mumbai, Kolkata, Agra and Lucknow.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+          </main>
+<!--Footer section 1-->
+          <footer>
+            <div class="foot-panel1">
+               <a href="https://rtsoi.org/">
+                <img src="./assets/responsible-tour.png" alt="rstoi" height="50px" width="110px">
+               </a>
+               <a href="https://indianvisaonline.gov.in/evisa/tvoa.html">
+                <img src="./assets/e-visa.jpg" alt="indian-gov" height="50px" width="100px">
+                </a>
+                <a href="https://www.india.gov.in/">
+                  <img src="./assets/indian-gov.png" alt="gov" height="50px" width="110px">
+                </a>
+                <a href="https://www.the-maharajas.com/">
+                  <img src="./assets/maharani.png" alt="maharaj" height="60px" width="110px">
+                </a>
+                <a href="https://www.iato.in/">
+                  <img src="./assets/iato.png" alt="iato" height="60px" width="110px">
+                </a>
+                               <a href="https://icpb.in/">
+                  <img src="./assets/ICPB-logo.png" alt="icpb" height="60px" width="110px">
+                </a>
+                <a href="https://atoai.org/">
+                  <img src="./assets/ATOAI.jpeg" alt="atoai" height="60px" width="110px">
+                </a>
+                <a href="https://nabh.co/">
+                  <img src="./assets/nabh.webp" alt="nabh" height="60px" width="110px">
+                </a>
+            </div>
+            <!--Footer section 2-->
+              <div class="foot-panel2">
+              <div class="state-tour footer2">
+                <div class="state-text">
+                  <div class="state-head">
+                  <h4>State Tourism Websites</h4>
+                </div>
+                  <div class="state-tourism">
+                    <div class="state-tour-div1">
+                  <ul class="state-list">
+                    <li>
+                      <a href="https://tourism.ap.gov.in/home">Andhra Pradesh</a></li>
+                      <li>
+                      <a href="https://tourism.bihar.gov.in/">Bihar</a></li>
+                      <li>
+                        <a href="https://www.gujarattourism.com/">Gujrat</a>
+                      </li>
+                      <li>
+                        <a href="https://tourism.jharkhand.gov.in/">Jharkhand</a>
+                      </li>
+                      <li>
+                        <a href="https://www.mptourism.com/">Madhya Pradesh</a>
+                      </li>
+                      <li>
+                        <a href="https://www.meghalayatourism.in/">Meghalya</a>
+                      </li>
+                      <li>
+                        <a href="https://odishatourism.gov.in/content/tourism/en.html">Odisha</a>
+                      </li>
+                                            <li>
+                        <a href="https://www.sikkimtourism.gov.in/Public/index">Sikkim</a>
+                      </li>
+                      <li>
+                        <a href="https://tripuratourism.gov.in/">Tripura</a>
+                      </li>
+                      <li>
+                        <a href="https://wbtourism.gov.in/">West Bengal</a>
+                      </li>
+                    <li>
+                      <a href="https://arunachaltourism.com/">Arunachal Pradesh</a>
+                    </li>
+                    </ul>
+                    </div>
+                    <div class="state-tour-div2">
+                    <ul>
+                    <li>
+                      <a href="https://www.chhattisgarhtourism.in/">Chhattisgarh</a>
+                    </li>
+                    <li>
+                      <a href="https://haryanatourism.gov.in/">Haryana</a>
+                    </li>
+                        <li>
+                      <a href="https://www.karnatakatourism.org/">Karnataka</a>
+                    </li>
+                    <li>
+                      <a href="https://maharashtratourism.gov.in/">Maharashtra</a>
+                    </li>
+                    <li>
+                      <a href="https://tourism.mizoram.gov.in/">Mizoram</a>
+                    </li>
+                    <li>
+                      <a href="https://punjabtourism.punjab.gov.in/">Punjab</a>
+                    </li>
+                    <li>
+                      <a href="https://www.tamilnadutourism.tn.gov.in/">Tamil Nadu</a>
+                    </li>
+                    <li>
+                      <a href="https://uptourism.gov.in/en">Uttar Pradesh</a>
+                    </li>
+                      <li>
+                        <a href="https://tourism.assam.gov.in/">Assam</a>
+                      </li>
+                      <li>
+                        <a href="https://goa-tourism.com/">Goa</a>
+                      </li>
+                      </ul>
+                      </div>
+                           <div class="state-tour-div3">
+                      <ul>
+                      <li>
+                        <a href="https://himachaltourism.gov.in/">Himachal Pradesh</a>
+                      </li>
+                      <li>
+                        <a href="https://www.keralatourism.org/">Kerala</a>
+                      </li>
+                      <li>
+                        <a href="https://manipurtourism.gov.in/">Manipur</a>
+                      </li>
+                      <li>
+                        <a href="https://tourism.nagaland.gov.in/">Nagaland</a>
+                      </li>
+                      <li>
+                        <a href="https://www.tourism.rajasthan.gov.in/">Rajasthan</a>
+                      </li>
+                      <li>
+                        <a href="https://telanganatourism.gov.in/">Telangana</a>
+                      </li>
+                      <li>
+                        <a href="https://uttarakhandtourism.gov.in/">Uttarakhand</a>
+                      </li>
+                      </ul>
+                      </div>
+                       </div>
+                    </div>
+                         <div class="ut-tour footer2">
+                      <div class="ut-head ">
+                       <h4>UT Tourism Websites</h4>
+                      </div>
+                      <div class="ut-text">
+                       <ul>
+                         <li>
+                           <a href="https://www.andaman.gov.in/">Andaman and Nicobar</a>
+                         </li>
+                         <li>
+                           <a href="https://chandigarhtourism.gov.in/">Chandigarh</a>
+                         </li>
+                         <li>
+                           <a href="https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli">Dadra and Nagar Haveli</a>
+                         </li>
+                         <li>
+                           <a href="https://en.wikipedia.org/wiki/Daman_and_Diu">Daman and Diu</a>
+                         </li>
+                         <li>
+                           <a href="https://www.delhitourism.gov.in/delhitourism/index.jsp">Delhi</a>
+                         </li>
+                         <li>
+                           <a href="https://www.jktdc.co.in/">Jammu and Kashmir</a>
+                         </li>
+                             <li>
+                           <a href="https://leh.nic.in/">Ladakh</a>
+                           </li>
+                           <li>
+                            <a href="https://www.lakshadweeptourism.com/">Lakhsadweep</a>
+                          </li>
+                          <li>
+                            <a href="https://en.wikipedia.org/wiki/Puducherry_(union_territory)">Puducherry</a>
+                          </li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="contact-dets footer2">
+                      <div class="dets-head">
+                        <h4>Contact Details</h4>
+                      </div>
+                        <div class="dets-text">
+                        <ul>
+                          <li>Deputy Secretary (IT)</li>
+                          <li>Ministry of Tourism</li>
+                          <li>Transport Bhawan</li>
+                          <li>Sansad Marg</li>
+                          <li>New Delhi</li>
+                        </ul>
+                      </div>
+                      <div class="dets-icons">
+                        <i class="fa-solid fa-phone">+91-011-23724175</i>
+                        <br>
+                        <i class="fa-solid fa-envelope">info.mot@gov.in</i>
+                        <br>
+                        <a href="https://www.facebook.com/incredibleindia/">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/incredibleindia">
+                          <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/incredibleindia/">
+                          <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCMxJPchGLE_CJ1MJbJy-xDQ">
+                          <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                    </div>
+                    </div>
+                      <div class="foot3-logo footer2">
+                      <p>India has a myriad of landscapes, great heritage and culture, varied flora and fauna. The 
+                        country is the most preferred tourist destinations for tourists from all across the world 
+                        for its picturesque landscapes, spectacular waterfalls, habitat of the country's largest 
+                        tiger reserve and home to the warmest people on earth.</p>
+                        <br>
+                         <hr style="margin-left: -20px; margin-right: -20px;">
+                   </div>
+                      <div class="foot-panel3">
+                      <div class="foot4-one">
+                            <a href="https://prod.incredibleindia.gov.in/content/incredible-india-v2/en/privacy-policy.html">
+                              Privacy Policy   
+                            </a>
+                             &nbsp;
+                            <a href="https://prod.incredibleindia.gov.in/content/incredible-india-v2/en/terms-of-platform-use.html">
+                              Terms of Platform Use   
+                            </a>
+                             &nbsp;
+                            <a href="https://prod.incredibleindia.gov.in/content/incredible-india-v2/en/important-links.html">
+                              Important Links 
+                            </a>
+                             &nbsp;
+                            <a href="https://prod.incredibleindia.gov.in/content/incredible-india-v2/en/emergency.html">
+                              Emergency
+                            </a>
+                    </div>  
+                    <div class="foot4-two">
+                      <p>&copy; Ministry of Tourism, Government of India</p>
+                    </div>
+                  </div> 
+                  </div>
+                  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
